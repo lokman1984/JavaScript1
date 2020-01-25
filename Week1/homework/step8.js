@@ -1,36 +1,43 @@
 "use strict";
-let firstNumber = 123;
-let secondString = "123";
-let thirdObjects = [1,2,3,];
-let fourArray = {a:1,b:2,c:3};
-if(typeof firstNumber===typeof secondString){
-  console.log("firstNumber same secondString ");
-}else{
-  console.log("firstNumber DIFFERENT secondString ");
+let string1 = "Amsterdam";
+let string2 = "Eindhoven";
+let Object1 = {
+    province:"North Brabant",
+    country:"Ntherland"
 };
-if(typeof thirdObjects === typeof fourArray){
-  console.log("thirdObjects same fourArray ");
-}else{
-  console.log("thirdObjects DIFFERENT fourArray ");
+let object2 = {
+    province:"North Holland",
+    country:"Ntherland" 
 };
-if(typeof firstNumber === typeof thirdObjects){
-  console.log("firstNumber same thirdObjects");
+if(typeof string1===typeof string2){
+  console.log("string1 same string2 ");
 }else{
-  console.log("firstNumber different thirdObjects");
+  console.log("string1 DIFFERENT string2 ");
 };
-if(typeof secondString === typeof fourArray){
-confirm.log("secondString same fourArray");
-}else{
-  console.log("secondString different fourArray");
-};
-if(typeof firstNumber === typeof fourArray){
-  console.log("firstnumber same fourarray");
-}else{
-  console.log("firstnumber different fourarray");
-};
-if(typeof secondString === typeof thirdObjects){
-  console.log("secondstring same thirdobject")
-}else{
-  console.log("secondstring different thirdobject")
-}
 
+if(typeof Object1 === typeof object2){
+  console.log("Object1 same Object2 ");
+}else{
+  console.log("Object1 DIFFERENT Object1 ");
+};
+
+if(typeof string1 === typeof Object1){
+  console.log("string1 same Object1");
+}else{
+  console.log("string1 different Object1");
+};
+if(typeof string2 === typeof object2){
+confirm.log("string2 same object2");
+}else{
+  console.log("string2 different object2");
+};
+if(typeof string1 === typeof object2){
+  console.log("string1 same object2");
+}else{
+  console.log("string1 different object2");
+};
+if(typeof string2 === typeof Object1){
+  console.log("string2 same Object1")
+}else{
+  console.log("string2 different Object1")
+}
