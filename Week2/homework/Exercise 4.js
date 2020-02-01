@@ -15,17 +15,12 @@ let books=[{
     alreadyRead:true
 }
 ];
-for(let  x of books){
- console.log(`${x.title} by ${x.author}`);
-}
-//Loop through the array of books.
-//   for (let i =0;i<=books.length;i++){
-//      for(let item in books[i]){
-//         //  console.log(item +" : "+ books[i][item]);
-      
-//      }
+
 
 for(let x=0;x<books.length;x++){
+    for(let  x of books){
+        console.log(`${x.title} by ${x.author}`);
+    }
     if(books[x].alreadyRead===true){
         console.log("You already read"+books[x].title);
     }else{

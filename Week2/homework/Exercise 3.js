@@ -6,5 +6,5 @@ let myMealRecipe = {
 };
 // for in
 for (prop in myMealRecipe){
-    console.log(prop + ' : ' + myMealRecipe[prop]);
+    console.log(prop + ':' + myMealRecipe[prop]);
 }
